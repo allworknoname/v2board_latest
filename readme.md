@@ -38,7 +38,7 @@ aaPanel 面板 > Website > Add site。
 以下命令都需要在站点目录进行执行。
 
 bash
-# 删除目录下文件
+删除目录下文件
 chattr -i .user.ini
 rm -rf .htaccess 404.html index.html .user.ini
 执行命令从 Github 克隆到当前目录。
@@ -70,6 +70,7 @@ location ~ .*\.(js|css)?$
     error_log off;
     access_log /dev/null; 
 }
+
 7.配置定时任务#
 aaPanel 面板 > Cron。
 
