@@ -1,7 +1,7 @@
-#使用aaPanel手动部署
+使用aaPanel手动部署
 aaPanel是宝塔(bt.cn)的国际版本
 
-##1.配置aaPanel#
+1.配置aaPanel#
 你需要在 aaPanel 选择你的系统获得安装方式。这里以 CentOS 7+ 作为系统环境进行安装。
 
 请务必使用 CentOS 7+ 安装aaPanel，其他系统可能会有未知问题。
@@ -39,16 +39,16 @@ aaPanel 面板 > Website > Add site。
 
 bash
 删除目录下文件
-chattr -i .user.ini
-rm -rf .htaccess 404.html index.html .user.ini
+```chattr -i .user.ini
+rm -rf .htaccess 404.html index.html .user.ini```
 执行命令从 Github 克隆到当前目录。
 
 bash
-git clone https://github.com/v2board/v2board.git ./
+```git clone https://github.com/v2board/v2board.git ./```
 执行命令安装依赖包以及V2board
 
 bash
-sh init.sh
+```sh init.sh```
 根据提示完成安装
 
 6.配置站点目录及伪静态#
@@ -57,7 +57,7 @@ sh init.sh
 添加完成后编辑添加的站点 > URL rewrite 填入伪静态信息。
 
 
-location /downloads {
+```location /downloads {
 }
 
 location / {  
@@ -69,7 +69,7 @@ location ~ .*\.(js|css)?$
     expires      1h;
     error_log off;
     access_log /dev/null; 
-}
+}```
 
 7.配置定时任务#
 aaPanel 面板 > Cron。
