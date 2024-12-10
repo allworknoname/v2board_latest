@@ -1,14 +1,14 @@
-使用aaPanel手动部署#
+#使用aaPanel手动部署
 aaPanel是宝塔(bt.cn)的国际版本
 
-1.配置aaPanel#
+##1.配置aaPanel#
 你需要在 aaPanel 选择你的系统获得安装方式。这里以 CentOS 7+ 作为系统环境进行安装。
 
 请务必使用 CentOS 7+ 安装aaPanel，其他系统可能会有未知问题。
 
 bash
 // 最新脚本可以在aaPanel官网获取
-yum install -y wget && wget -O install.sh http://www.aapanel.com/script/install_6.0_en.sh && bash install.sh
+```yum install -y wget && wget -O install.sh http://www.aapanel.com/script/install_6.0_en.sh && bash install.sh```
 安装完成后我们登陆 aaPanel 进行环境的安装。
 
 选择使用LNMP的环境安装方式勾选如下信息
